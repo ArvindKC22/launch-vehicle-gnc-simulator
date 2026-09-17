@@ -1,0 +1,16 @@
+# CMake and compiled artifacts
+/build/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.o
+*.a
+
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+
+# Large Monte Carlo traces are archived on Zenodo, not GitHub.
+results/*_trace.csv
