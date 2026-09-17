@@ -1,0 +1,15 @@
+vehicle:
+  dry_mass_kg: 100.0
+  initial_propellant_mass_kg: 50.0
+  reference_area_m2: 0.01
+  nozzle_exit_area_m2: 0.0002
+  inertia_dry_b: [10.0, 10.0, 1.0]
+  inertia_full_b: [12.0, 12.0, 1.2]
+  # Nominal thrust line passes through the CG; transverse CG offsets are dispersed.
+  # Nozzle is one metre aft of the CG and lies on the nominal thrust axis.
+  thrust_application_point_b_m: [-1.0, 0.0, 0.0]
+  drag_vs_mach: [[0.0, 0.5], [0.8, 0.45], [2.0, 0.6], [10.0, 0.4]]
+  lift_vs_alpha: [[0.0, 0.0], [0.1, 0.5], [0.3, 0.9]]
+  motor: [[0.0, 9000.0, 2.0], [25.0, 9000.0, 2.0], [30.0, 0.0, 0.0]]
+  # [altitude_m, downrange_wind_mps, crossrange_wind_mps]
+  wind: [[0.0, 0.0, 0.0], [10000.0, 5.0, 3.0], [30000.0, 15.0, 8.0]]

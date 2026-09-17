@@ -1,0 +1,17 @@
+monte_carlo:
+  runs: 10000
+  seed: 20260908
+  duration_s: 600
+  dt_s: 0.01
+  threads: 4
+  closed_loop: 1
+  consistency_interval_s: 1.0
+  distributions:
+    wind_magnitude_scale: {type: normal, mean: 1.0, sigma: 0.20}
+    thrust_scale: {type: normal, mean: 1.0, sigma: 0.02}
+    thrust_misalignment_deg: {type: normal, mean: 0.0, sigma: 0.15}
+    dry_mass_scale: {type: normal, mean: 1.0, sigma: 0.01}
+    # Transverse CG trim error; the nominal nozzle arm is one metre axial.
+    cg_location_m: {type: normal, mean: 0.0, sigma: 0.001}
+    aero_scale: {type: normal, mean: 1.0, sigma: 0.03}
+    sensor_bias_scale: {type: normal, mean: 1.0, sigma: 0.20}
