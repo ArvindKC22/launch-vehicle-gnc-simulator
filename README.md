@@ -50,6 +50,8 @@ If the archived dataset or release is used, cite:
 
 > Chandirakala, Arvind Kanagasabapathi. *Launch Vehicle GNC Simulator: Reproducible Software, Configuration, and Monte Carlo Validation Dataset*. Zenodo. https://doi.org/10.5281/zenodo.22801065
 
-## License
+## Licensing
 
-No software license has been selected for this repository yet. Reuse rights are therefore not granted by default.
+- The software source code is available under the [MIT License](LICENSE).
+- Monte Carlo datasets, figures, configuration datasets, and documentation are available under [Creative Commons Attribution 4.0 International](LICENSE-DATA.md).
+- The Zenodo archive carries the same licensing information.
